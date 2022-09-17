@@ -19,9 +19,8 @@ app.get('/productos', (req, res)=>{
 
 app.get('/productosRandon', (req, res) => {
    
- const result = productos.getAll()
- const randomProduct = result[Math.floor(Math.random() * result.length)]; 
- res.json(productos.getById(randomProduct));
+ res.json(productos.getRandomProduct())
+
  
 
 })

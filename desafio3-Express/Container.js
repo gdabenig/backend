@@ -52,7 +52,11 @@ module.exports = class Container {
         return this.products
     }
 
-    
+    getRandomProduct(){
+        let randomProduct = this.products[Math.floor(Math.random()* this.products.length)]
+        return randomProduct
+    }
+ 
 
        
 }
