@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "product": "Samsung S10",
+    "price": "65000"
+  },
+  {
+    "id": 2,
+    "product": "Samsung S20",
+    "price": "65000"
+  },
+  {
+    "id": 3,
+    "product": "MSamsung S21",
+    "price": "65000"
+  },
+  {
+    "id": 4,
+    "product": "Iphone 10",
+    "price": "65000"
+  },
+  {
+    "id": 5,
+    "product": "Iphone 11",
+    "price": "65000"
+  },
+  {
+    "id": 6,
+    "product": "Motorola Plus",
+    "price": "65000"
+  },
+  {
+    "id": 7,
+    "product": "samsung"
+  },
+  {
+    "id": 8,
+    "product": "samsung"
+  },
+  {
+    "id": 9,
+    "product": "Iphone"
+  },
+  {
+    "id": 10,
+    "product": "Motorola"
+  }
+]
