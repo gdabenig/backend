@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
 router.post('', (req, res) => {
     const product = req.body;
     const id =  products.save(product);
-    res.status(201).send(`Luchi el id es ${id}`)
+    res.status(201).send(`El puerto es ${id}`)
 })
 
 router.put('/:id', (req, res) => {
