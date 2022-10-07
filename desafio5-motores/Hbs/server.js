@@ -10,15 +10,15 @@ const PORT = process.env.PORT || 3001;
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-app.engine('hbs', hbs.engine({
-    extname: '.hbs',
+app.engine('Hbs', hbs.engine({
+    extname: '.Hbs',
     partialsDir: __dirname + '/views/partials',
     layoutsDir: __dirname + '/views/layouts',
-    defaultLayout: 'layout.hbs'
+    defaultLayout: 'layouts.hbs'
 }));
 
 app.set('views', './views');
-app.set('view engine', 'hbs');
+app.set('view engine', 'Hbs');
 
 
 app.get('/', (req, res) => {
