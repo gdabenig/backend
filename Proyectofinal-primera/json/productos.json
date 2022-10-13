@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "timeStamp": "15/10/2022 06:47:01",
+      "product": "Samsung S10",
+      "value": 65000,
+      "code": "4123",
+      "description": "Samsung Gama Baja",
+      "stock": 12,
+      "urlImg": "https://images.fravega.com/f300/fa53805370e7eed1fc1eb974d668d857.jpg"
+    },
+    {
+      "id": 2,
+      "timeStamp": "15/10/2022 04:47:01",
+      "product": "Samsung galaxy S20",
+      "value": 105000,
+      "code": "4151",
+      "description": "Samsung alta gama",
+      "stock": 13,
+      "urlImg": "https://images.samsung.com/my/smartphones/galaxy-s20/images/galaxy-s20-share-image.jpg"
+    },
+    {
+      "id": 3,
+      "timeStamp": "15/10/2022 08:47:01",
+      "product": "Iphone 11",
+      "value": 175000,
+      "code": "1522",
+      "description": "Ipone 1ra Generacion",
+      "stock": 23,
+      "urlImg": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1567021766023"
+    }
+  ]
