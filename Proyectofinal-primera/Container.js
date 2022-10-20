@@ -1,6 +1,4 @@
 const fs = require('fs')
-const { readFile } = require('fs/promises')
-
 module.exports = class Container {
     constructor(file){
         this.file = file
@@ -40,13 +38,16 @@ module.exports = class Container {
             }
         }
         this.products.push({id, timeStamp, ...productAdded, urlImg: urlImg()})
+        
+        fs.writeFile(this.file, JSON.stringify(this.products, null, 2), error => {
+            if (error) {
+                console.log(error);  
+            } else {
+                console.log("guardado");
+            }
+        } )
         // this.products.push({"id": lastId,"product": productAdded.product, "value": parseInt(productAdded.value), "urlImg": img()})
         return {status: "saved", "product": this.products[this.products.length - 1]}
-    }
-
-    getRandomProduct(){
-        let randomProduct = this.products[Math.floor(Math.random()* this.products.length)]
-        return randomProduct
     }
 
     editById(id, productEdited){
@@ -57,6 +58,15 @@ module.exports = class Container {
         if (product) {
             const indexOfProduct = this.products.indexOf(product)
             this.products[indexOfProduct] = {"id": product.id, ...productEdited}
+            
+            fs.writeFile(this.file, JSON.stringify(this.products, null, 2), error => {
+                if (error) {
+                    console.log(error);  
+                } else {
+                    console.log("edited");
+                }
+            } )
+
             return {status:"edited", "product": this.products[indexOfProduct]}
         } else {
             return {"error": "producto no encontrado"}
@@ -71,6 +81,15 @@ module.exports = class Container {
         if (product) {
             const indexOfProduct = this.products.indexOf(product)
             this.products.splice(indexOfProduct,1)
+
+            fs.writeFile(this.file, JSON.stringify(this.products, null, 2), error => {
+                if (error) {
+                    console.log(error);  
+                } else {
+                    console.log("deleted");
+                }
+            } )
+
             return {status: "deleted", "product": product}
         } else {
             return {"error": "producto no encontrado"} 

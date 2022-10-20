@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "product": ""Samsung S10",
+    "product": "Samsung S10",
     "value": 650000,
     "urlImg": "https://images.fravega.com/f300/fa53805370e7eed1fc1eb974d668d857.jpg.webp"
   },
