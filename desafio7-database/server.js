@@ -69,7 +69,7 @@ router.delete("/:id", async (req, res) => {
     res.json(await productos.deleteById({'id': id}))
 })
 
-httpServer.listen(PORT, ()=>{ console.log('Escuchando server') })
+httpServer.listen(PORT, ()=>{ console.log('Servidor escuchando') })
 
 
 io.on('connection', async socket=>{
@@ -92,4 +92,3 @@ io.on('connection', async socket=>{
     
 
 })
-

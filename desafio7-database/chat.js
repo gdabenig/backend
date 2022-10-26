@@ -34,8 +34,8 @@ function createDb() {
         const WelcomeMessage =
         {
             "name": "Servidor",
-            "message": "Deje su mensaje a continuación",
-            "date": "19/10/2022,08:47:37"
+            "message": "Deje su mensaje a ahora",
+            "date": "19/10/2022, 08:47:37"
         }
 
 

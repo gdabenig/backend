@@ -1,9 +1,7 @@
-
-
 const knex = require('knex')
 const { options } = require('./options/connectOptions')
 
-// craar base()
+// createDb()
 
 
 module.exports = class Container {
@@ -40,7 +38,7 @@ module.exports = class Container {
         try {
             await this.knex.from(this.table).where('id', '=', id).update(productEdited)
             return {
-                msj: "Producto editado"
+                msj: "producto modificado"
             }
         } catch (error) {
             console.log(error)
@@ -51,7 +49,7 @@ module.exports = class Container {
         try {
             await this.knex.from(this.table).where(id).del()
             return {
-                msj: "Producto dado de baja"
+                msj: "producto dado de baja"
             }
         } catch (error) {
 
@@ -68,7 +66,7 @@ function createDb() {
         tables.string('value')
         tables.string('urlImg')
     }).then(() => {
-        console.log("table creada");
+        console.log("table created");
     }).catch((error) => {
         console.log(error); throw error;
     }).finally(() => {
@@ -77,7 +75,9 @@ function createDb() {
 
     knex(options.mysql).from('productos').insert(
         [
-            {
+
+
+        {
                 product: "Samsung S10",
                 value: 93000,
                 urlImg: "https://images.fravega.com/f300/fa53805370e7eed1fc1eb974d668d857.jpg.webp"
@@ -87,9 +87,10 @@ function createDb() {
                 value: 170000,
                 urlImg: "https://images.samsung.com/my/smartphones/galaxy-s20/images/galaxy-s20-share-image.jpg"
             }
+                  
         ]
     ).then(() => {
-        console.log("products dado de alta");
+        console.log("producto dado de alta");
     }).catch((error) => {
         console.log(error); throw error;
     }).finally(() => {
