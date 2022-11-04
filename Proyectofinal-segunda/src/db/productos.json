@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "category": "samsung",
+        "description": "Con un diseño de vanguardia, el Samsung S10 es un teléfono único que ofrece una pantalla AMOLED con una resolución Quad HD+ (3040 x 1440 píxeles) sin Notch ni distracciones. Además, cuenta con lector de huellas en pantalla y un sistema multicámara increíble.",
+        "image": "https://images.fravega.com/f300/fa53805370e7eed1fc1eb974d668d857.jpg.webp",
+        "price": 60000,
+        "stock": 30,
+        "title": "Samsung galaxy S10"
+    },
+    { 
+        "id": 2,
+        "category": "samsung",
+        "description": "Un smartphone que te da lo que querés para que puedas hacer más de lo que disfrutás, ese es el Galaxy S20 FE",
+        "image": "https://images.samsung.com/my/smartphones/galaxy-s20/images/galaxy-s20-share-image.jpg",
+        "price": 196000,
+        "stock": 200,
+        "title": "Samsung galaxy S20"
+        
+    },
+    {
+        "id": 3,
+        "category": "iphone",
+        "description": "El iPhone 11 tiene un sistema de dos cámaras de 12MP con ultra gran angular, con modo Noche, modo Retrato y video 4K de hasta 60 cps. La cámara frontal True Depth de 12MP con modo Retrato, video 4K y vídeo en cámara lenta.",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1567021766023",
+        "price": 260000,
+        "stock": 50,
+        "title": "Iphone 11"
+        
+    },
+    {
+        "id": 4,
+        "category": "iphone",
+        "description": "Es a prueba de agua: Clasificación IP68 (hasta 30 minutos a una profundidad máxima de 6 metros) según la norma IEC 60529.",
+        "image": "https://www.mylshop.com.ar/wp-content/uploads/2022/03/apple-iphone-12-128gb-verde.jpg",
+        "price": 360000,
+        "stock": 40,
+        "title": "Iphone 12"
+        
+    },
+    {
+        "id": 5,
+        "category": "motorola",
+        "description": "El Motorola One Vision es el nuevo miembro de la serie One de Motorola. Con una pantalla Full HD+ de 6.3 pulgadas con un agujero para cámara frontal, el Motorola One Vision está potenciado por un procesador Samsung Exynos 9609 de ocho núcleos acompañado de 4GB de memoria RAM y 128GB de almacenamiento interno expandible. La cámara principal del One Vision es dual, de 48 MP + 5 MP, mientras que su cámara para selfies es de 25 MP.Como parte del programa Android One, el Motorola One Vision corre Android 9.0 Pie y recibirá actualizaciones de Android directamente de Google.",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_667419-MLA31651956517_082019-O.webp",
+        "price": 97000,
+        "stock": 30,
+        "title": "Motorola One Vision"
+        
+    },
+    {
+        "id": 6,
+        "category": "motorola",
+        "description": "G habilitado: el OnePlus Nord N20 es el teléfono 5G de nivel básico perfecto, con especificaciones premium y un precio asequible. *5G compatible con T-mobile, Google Fi, Mint Mobile, Metro by TMO, Simple Mobile. 5G disponible en áreas seleccionadas.",
+        "image": "https://tienda.claro.com.ar/wcsstore/Claro/images/catalog/productos/646x1000/70008437.jpg",
+        "price": 160000,
+        "stock": 40,
+        "title": "Motorola One Plus"
+        
+    },
+    {
+        "id": 7,
+        "category": "samsung",
+        "description": "Sin dudas el Samsung Galaxy Z Flip3 es ideal para quienes buscan innovación, tecnología de punta y durabilidad en un mismo dispositivo. En su nueva versión además de ajustarse a cualquier bolsillo, está disponible en una gama de colores brillantes para que elijas el ideal para vos .",
+        "image": "https://m.media-amazon.com/images/I/416fm1ITV6L._AC_SX425_.jpg",
+        "price": 360000,
+        "stock": 20,
+        "title": "Samsung Galaxy Z3 Flit3 5G"
+        
+    },
+    {
+        "id": 8,
+        "category": "samsung",
+        "description": "El Galaxy S21 Fan Edition 128GB tiene todo lo que te gusta en 6,4 pulgadas, un tamaño diseñado para conectarte con amigos, explorar nuevas pasiones, realizar una transmisión en vivo y disfrutar durante horas de tus programas favoritos.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZFj2NbQwxxyLWwiaL_gl-TaAb2a19K71nejexSyW6tTtfSvqHjevf_a4MUOR8GGW13ek&usqp=CAU",
+        "price": 240000,
+        "stock": 40,
+        "title": "Samsung Galaxy S21 FE 5G"
+        
+    },
+    {
+        "id": 9,
+        "category": "motorola",
+        "description": "Es a prueba de agua: Clasificación IP68 (hasta 30 minutos a una profundidad máxima de 6 metros) según la norma IEC 60529.",
+        "image": "https://www.mylshop.com.ar/wp-content/uploads/2022/03/apple-iphone-12-128gb-verde.jpg",
+        "price": 180000,
+        "stock": 40,
+        "title": "Motorola Edge 20 Pro"
+        
+    },
+    {
+        "id": 10,
+        "category": "iphone",
+        "description": "Es a prueba de agua: Clasificación IP68 (hasta 30 minutos a una profundidad máxima de 6 metros) según la norma IEC 60529.",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1567021766023",
+        "price": 250000,
+        "stock": 40,
+        "title": "Iphone 9"
+        
+    }
+    
+]
