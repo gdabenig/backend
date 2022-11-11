@@ -1,6 +1,7 @@
 
+
 export default {
-    database: "firebase",
+    database: "firebase",//firebase, mongo
     firebase: {
         "type": "service_account",
         "project_id": "don-bosco-af3c3",

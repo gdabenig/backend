@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1667528547832,
+    "timestamp": "1,667,528,547,832",
+    "title": "samsung",
+    "description": "Fall guys VR? nunca lo escuche(?",
+    "code": 1239,
+    "price": 300000,
+    "thumbnail": ""https://images.samsung.com/my/smartphones/galaxy-s20/images/galaxy-s20-share-image.jpghttps",
+    "stock": 10
+  },
+  {
+    "id": 1667529087522,
+    "timestamp": "1,667,529,087,522",
+    "title": "Iphone",
+    "description": "God of War Ragnarok llega en 5 dias!!",
+    "code": 6724,
+    "price": 200000,
+    "thumbnail": ""https://images.samsung.com/my/smartphones/galaxy-s20/images/galaxy-s20-share-image.jpghttps:",
+    "stock": 10
+  }
+]

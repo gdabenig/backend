@@ -1,4 +1,3 @@
-
 import mongoose from 'mongoose'
 import { ProductsModel } from '../models/product.js'
 
@@ -10,7 +9,7 @@ export default class Products {
     connect() {
         try {
             const URL = 'mongodb+srv://gdabenig:Milagros2011@cluster0.7lls3u0.mongodb.net/ecommerce?retryWrites=true&w=majority'
-            mongoose.connect(URL, {
+             mongoose.connect(URL, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
             })
@@ -25,6 +24,7 @@ export default class Products {
             const newProduct = new ProductsModel(product)
             await newProduct.save()
             console.log('product added');
+            return { status: "product added" }
         } catch (error) {
             console.log(error);
         }
@@ -54,6 +54,7 @@ export default class Products {
         try {
             let products = await ProductsModel.updateOne({ _id: id }, { $set: params })
             console.log('Edited', products);
+            return { status: "modified" }
         } catch (error) {
             console.log(error);
         }
@@ -63,6 +64,7 @@ export default class Products {
         try {
             let products = await ProductsModel.deleteOne({ _id: id })
             console.log('Deleted', products);
+            return { status: `Product ${id} deleted`}
         } catch (error) {
             console.log(error);
         }
@@ -70,4 +72,3 @@ export default class Products {
 
 
 }
-
