@@ -1,0 +1,15 @@
+
+  {
+    "id": 1,
+    "productos": [
+      {
+        "id": 3,
+        "product": "Samsung"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "productos": []
+  }
+]

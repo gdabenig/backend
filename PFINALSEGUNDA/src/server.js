@@ -1,7 +1,7 @@
 
 import express from 'express'
-import Productos from './datosproductos/productosDao.js'
-console.log(Productos);
+import Productos from './daos/productosDao.js'
+import Cart from './daos/carritosDao.js'
 // import Productos from './daos/productos/productosDaoFirebase.js'
 // const express = require('express')
 const { Router } = express
@@ -12,6 +12,7 @@ const router = Router()
 
 // const Contenedor = require('./container')
 const productos = new Productos('productos')
+const cart = new Cart('carritos')
 
 // const Cart = require('./cart')
 // const cart = new Cart('./json/carrito.json')
@@ -52,35 +53,51 @@ router.delete('/productos/:id', async (req, res) => {
 
 // CARRITO
 
-router.get('/carrito', (req, res) => {
-    res.json(cart.getAll())
+router.get('/carrito', async (req, res) => {
+    res.json(await cart.getAll())
 })
 
-router.post('/carrito', (req, res) => {
-    res.status(201).send(cart.addCart())
+router.get('/carrito/:id', async (req, res) => {
+    const cartId = req.params.id
+    res.json(await cart.getById(cartId))
+})
+
+router.post('/carrito', async (req, res) => {
+    const newCart = req.body
+    res.status(201).send(await cart.create(newCart))
+})
+
+router.put('/carrito/:id', async (req, res) => {
+    const id = req.params.id
+    const dataToEdit = req.body;
+    res.status(201).send(await cart.update(id, dataToEdit))
 })
 
 router.delete('/carrito/:id', (req, res) => {
-    const id = parseInt(req.params.id)
-    res.status(201).send(cart.deleteCartById(id))
+    const id = req.params.id
+    res.status(201).send(cart.delete(id))
 })
+
+// CART PRODUCTS CRUD
 
 router.get('/carrito/:id/productos', (req, res) => {
-    const cartId = parseInt(req.params.id)
-    res.json(cart.getProductsById(cartId))
+    const cartId = req.params.id
+    res.json(cart.getProductsFromCart(cartId))
 })
 
-router.post('/carrito/:id/productos', (req, res) => {
-    const cartId = parseInt(req.params.id)
-    const productId = req.body
-    res.status(201).send(cart.addProduct(cartId, productId))
+router.post('/carrito/:id', async (req, res) => {
+    const id = req.params.id
+    const addProduct = req.body
+    res.status(201).send(await cart.addToCart(addProduct, id))
 })
 
 router.delete('/carrito/:id/productos', (req, res) => {
     const cartId = parseInt(req.params.id)
     const productId = req.body
-    res.status(201).send(cart.deleteProduct(cartId, productId))
+    res.status(201).send(cart.removeFromCart(cartId, productId))
 })
+
+//  NOT FOUND ROUTES
 
 app.all('*', (req, res) => {
     res.status(404).send({ error: 404, description: "ruta no encontrada" })
@@ -89,5 +106,6 @@ app.all('*', (req, res) => {
 // LISTEN
 
 app.listen(PORT, () => {
-    console.log(`Escuchando port ${PORT}`)
+    console.log(`Escuchando ${PORT}`)
 })
+Footer

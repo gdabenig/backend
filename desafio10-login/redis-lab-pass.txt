@@ -1,0 +1,7 @@
+ost: redis-15759.c270.us-east-1-3.ec2.cloud.redislabs.com
+port: 15759
+username: federicoaosandon
+password: Federico1&&
+
+// redis-cli -h redis-15759.c270.us-east-1-3.ec2.cloud.redislabs.com -p 15759
+// auth federicoaosandon Federico1&&
