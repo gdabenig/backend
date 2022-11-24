@@ -1,6 +1,7 @@
 
+
 export default {
-  database: "memoria",//firebase, mongo
+  database: "mongo",//firebase, mongo
   mongo: {
     "URL": 'mongodb+srv://gdabenig:<milagros2011>@cluster0.xtm8cc5.mongodb.net/?retryWrites=true&w=majority'
       },
